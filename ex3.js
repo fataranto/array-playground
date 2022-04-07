@@ -6,4 +6,5 @@
 
 let numeros = [1, 2, 3, 4, 5];
 
-console.log(numeros); 
+// El método fill NO crea un array nuevo; tan solo modifica los elementos del array.
+console.log(numeros.fill(0)); 

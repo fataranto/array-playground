@@ -4,6 +4,7 @@
 
 let colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
 
-let resultado = colors.map()
+// Casi todos los métodos de array pueden recibir 2 parámetros. El primero siempre es el elemento sobre el que estamos iterando, el segundo, el índice que ocupa en el array
+let resultado = colors.map((s, index) => index + '-' + s);
 
 console.log(resultado); // ['0-Blue', '1-Green', '2-Red', '3-Orange', '4-Violet', '5-Indigo', '6-Yellow']

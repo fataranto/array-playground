@@ -4,7 +4,9 @@
 
 let strings = ["hello", "what", "is", "up", "dude"];
 
-let resultado = strings.map(); // TODO
+// Convierte todos los strings en ellos mismos, concatena un '-', y luego concatena el tamaño del string.
+
+let resultado = strings.map(s => s + '-' + s.length); // TODO
 
 console.log(resultado); // [hello-5, what-4, is-2, up-2, dude-4]
 

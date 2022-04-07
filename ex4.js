@@ -58,9 +58,12 @@ const items = [
 
 // Usa el método .some para averiguar si existe alguna tarea que contenga el texto "Ballena". Piensa bien que campo deberías comprobar.
 
-console.log(items.some()); //TODO. Resultado esperado: false
+// Recordar que no hace falta hacer un return cuando lo escribimos de esta manera. Además, includes ya devuelve un boleano.
+console.log(items.some(ticket => ticket.text.includes('Ballena'))); //TODO. Resultado esperado: false
 
 // Ahora usa el método .some para averiguar si existe una tarea etiquetada con un tag "ES6" en alguno de los elementos del array.
 
-console.log(items.some()); //TODO. Resultado esperado: true (la última!)
+
+// Un array dentro de una propiedad de un objeto. Una estructura de datos muy habitual
+console.log(items.some(ticket => ticket.Tags.includes('ES6'))); //TODO. Resultado esperado: true (la última!)
 
